@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textile Drop-Off Survey</title>
+</head>
+<body>
+    <h2>Survey on Student Willingness to Participate in a Textile Drop-Off Initiative</h2>
+    <p>We are conducting a survey to assess students' interest in participating in a textile drop-off initiative aimed at reducing waste and promoting sustainability. Your responses will help us design a convenient and effective program.</p>
+    
+    <form action="https://formspree.io/f/xwplppbj" method="POST"> <!-- Formspree endpoint -->
+        <label for="year">1. What is your current year of study?</label><br>
+        <select id="year" name="year">
+            <option value="Freshman">Freshman</option>
+            <option value="Sophomore">Sophomore</option>
+            <option value="Junior">Junior</option>
+            <option value="Senior">Senior</option>
+            <option value="Graduate Student">Graduate Student</option>
+        </select><br><br>
+        
+        <label>2. How often do you discard unwanted clothing or textiles?</label><br>
+        <input type="radio" name="discard_frequency" value="Frequently"> Frequently (Once a month or more)<br>
+        <input type="radio" name="discard_frequency" value="Occasionally"> Occasionally (Every few months)<br>
+        <input type="radio" name="discard_frequency" value="Rarely"> Rarely (Once a year or less)<br>
+        <input type="radio" name="discard_frequency" value="Never"> Never<br><br>
+        
+        <label>3. What do you typically do with unwanted clothing? (Select all that apply)</label><br>
+        <input type="checkbox" name="dispose_method" value="Donate"> Donate to charity/thrift store<br>
+        <input type="checkbox" name="dispose_method" value="Give"> Give to friends/family<br>
+        <input type="checkbox" name="dispose_method" value="Sell"> Sell (e.g., online, resale shops)<br>
+        <input type="checkbox" name="dispose_method" value="Throw"> Throw away<br>
+        <input type="checkbox" name="dispose_method" value="Repurpose"> Repurpose/recycle<br><br>
+        
+        <label>4. Would you participate in a textile drop-off program on campus?</label><br>
+        <input type="radio" name="participation" value="Yes"> Yes, definitely<br>
+        <input type="radio" name="participation" value="Maybe"> Maybe, depending on location and convenience<br>
+        <input type="radio" name="participation" value="No"> No<br><br>
+        
+        <label>5. What would motivate you to participate?</label><br>
+        <input type="checkbox" name="motivation" value="Environmental Impact"> Environmental impact (reducing waste)<br>
+        <input type="checkbox" name="motivation" value="Convenience"> Convenience (nearby drop-off points)<br>
+        <input type="checkbox" name="motivation" value="Incentives"> Incentives (discounts, rewards)<br>
+        <input type="checkbox" name="motivation" value="Awareness"> Awareness campaigns<br>
+        <input type="text" name="motivation_other" placeholder="Other (please specify)"><br><br>
+        
+        <label>6. Preferred drop-off location:</label><br>
+        <select name="location">
+            <option value="Student Union">Student Union</option>
+            <option value="Dormitories">Dormitories/Residence Halls</option>
+            <option value="Academic Buildings">Academic Buildings</option>
+            <option value="Other">Other (please specify)</option>
+        </select><br><br>
+        
+        <label>7. Additional feedback or suggestions:</label><br>
+        <textarea name="feedback" rows="4" cols="50"></textarea><br><br>
+        
+        <input type="submit" value="Submit Survey">
+    </form>
+</body>
+</html>
